@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width initial scale=1.0">
+ <meta name="title" content="Tinyone psd">
+<meta name="description" content="The project contains different bootstrap class.">
+<meta name="keywords" content="html,css,bootstrap, FLEX, GRID">
+<meta name="robots" content="index, follow">
+<meta name="language" content="English">
+<meta name="revisit-after" content="7 days">
+<meta name="author" content="Mahathir Mohammad">
+
+<title>JS Documents</title>
+<!-- css links -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/media.css">
+<!-- css links -->
+</head>
+<body>	
+<!-- header start -->
+<div class="container">
+
+<!-- Date show start -->
+	<h3>Click the button to show the date</h3>
+	<button class="btn btn-primary" type="button" onclick="dateShow()">Click me</button>
+	<h4 id="sd"></h4>
+<!-- Date show end -->
+<!-- text cng start --><hr>
+	<h3>Click the button to change the text</h3>
+	<button class="btn btn-primary" type="button" onclick="textChange()">Change text</button>
+	<h4 id="tc">ASSALAMUALAIKUM</h4>
+<!-- text cng end -->
+
+<!-- image change start --><hr>
+	<h3>Click the button to change the image</h3>
+	<button class="btn btn-primary" type="button" onclick="bulbOff()">Click to off the bulb</button>
+		<img id="boo" src="images/bulboff.gif" alt="Bulb">
+	<button class="btn btn-primary" type="button" onclick="bulbOn()">Click to on the bulb</button>
+<!-- image change end -->
+
+
+<!-- css change start --><hr>
+		<h3>Click the button to change the css</h3>
+		<button class="btn btn-primary" onclick="colorChange()">Click to cng css</button>
+		<h4 id="css">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+		<hr>
+		<h3>Click the button to change the css</h3>
+		<button class="btn btn-primary" onclick="fontChange()">Click to cng css</button>
+		<h4 id="font">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+<!-- css change end -->
+
+<!-- Text show/hide start--><hr>
+	<h3>Click the button to show/hide the text</h3>
+	<button class="btn btn-primary" type="button" onclick="textShow()">Show</button>
+	<button class="btn btn-primary" type="button" onclick="textHide()">Hide</button>
+	<p id="sh">Learn more</p><hr>
+	<!-- Text show/hide end -->
+	
+	 <h3>Let used to sum up the numbers (5+6)</h3> 
+	<button class="btn btn-primary" type="button" onclick="sLet()">Show result</button>
+	<p id="sLet">Result-</p><hr>
+
+<!-- VAR -->
+	<h3>Var used to substract the numbers (30-20)</h3>
+	<button class="btn btn-primary" type="button" onclick="sVar()">Show result</button>
+	<p id="sVar">Result-</p><hr>
+
+<!-- LET AND CONST -->
+	<h3>let ans const used to multiply the numbers (50*10)</h3>
+	<button class="btn btn-primary" type="button" onclick="sLetConst()">Show result</button>
+	<p id="sLetC">Result-</p><hr>
+
+<!-- MULTIPLY DIVIDE ADD & SUBSTRACT START-->
+	<h3>Assignment and operator shorcut used to multiply the numbers (5*10)</h3>
+	<button class="btn btn-primary" type="button" onclick="sShort()">Show result</button>
+	<p id="s">Result-</p><hr>
+
+	<h3>Assignment and operator shorcut used to divide the numbers (10/5)</h3>
+	<button class="btn btn-primary" type="button" onclick="sDivide()">Show result</button>
+	<p id="s1">Result-</p><hr>
+			
+	<h3>Assignment and operator shorcut used to add the numbers (10+5)</h3>
+	<button class="btn btn-primary" type="button" onclick="sAdd()">Show result</button>
+	<p id="s2">Result-</p><hr>
+	
+	<h3>Assignment and operator shorcut used to substract the numbers (10-5)</h3>
+	<button class="btn btn-primary" type="button" onclick="sMinus()">Show result</button>
+	<p id="s3">Result-</p><hr>
+<!-- MULTIPLY DIVIDE ADD & SUBSTRACT END-->
+
+<!-- PERCENTAGE AND EQUALIZE START -->
+	<h3>Assignment and operator shorcut used to percentage the numbers (10%5)</h3>
+	<button class="btn btn-primary" type="button" onclick="sPercent()">Show result</button>
+	<p id="s4">Result-</p><hr>
+
+	<h3>Assignment and operator shorcut used to equalize the numbers </h3>
+	<button class="btn btn-primary" type="button" onclick="sEqual()">Show result</button>
+	<p id="s5">Result-</p><hr>
+	
+	<h3>Assignment and operator shorcut used to show text world</h3>
+	<button class="btn btn-primary" type="button" onclick="sHello()">Show result</button>
+	<p id="s6">Result-</p><hr>
+<!-- PERCENTAGE AND EQUALIZE end -->
+
+<!-- Js expressions start -->
+	<h3>JavaScript Expressions</h3>
+	<button class="btn btn-primary" type="button" onclick="sJohn()">Show result</button>
+	 <p id="John">Value-</p><hr>
+<!-- Js expressions end -->
+
+ <!-- LOGICAL Value START -->
+	 <h3>The &= Operator(100&6)</h3>
+	 <button class="btn btn-primary" type="button" onclick="sAnd()">Show result</button>
+	 <h4 id="s7">Value-<hr></h4>
+	
+	<h3>The |= Operator(100|=6)</h3>
+	 <button class="btn btn-primary" type="button" onclick="sOr()">Show result</button>
+	<h4 id="s8">Value-<hr></h4>
+
+	 <h3>The Xor ^= Operator(100^=6)</h3>
+	 <button class="btn btn-primary" type="button" onclick="sX0r()">Show result</button>
+	<h4 id="s9">Value-<hr></h4>
+	 <h3>The Logical And &&= Operator(100 &&=6)</h3>
+	 <button class="btn btn-primary" type="button" onclick="sLAnd()">Show result</button>
+	<h4 id="s10">Value-<hr></h4>
+
+	 <h3>The Logical Or ||= Operator (100 ||=6)</h3>
+	<button class="btn btn-primary" type="button" onclick="sLOr()">Show result</button>
+	<h4 id="s11">Value-<hr></h4>
+<!-- LOGICAL Value END -->
+
+<!-- Sequence result start -->
+     <h3>Sequence effect the result (Volvo+16+4)</h3>
+	 <button class="btn btn-primary" type="button" onclick="sSequence()">Show result</button>
+	<h4 id="s12">Value-<hr></h4>
+
+	 <h4>Sequence effect the result (16+4+Volvo)</h4>
+	 <button class="btn btn-primary" type="button" onclick="sSequence()">Show result</button>
+	<h4 id="s13">Value-<hr></h4>
+<!-- Sequence result end -->
+
+<!-- Objects start -->
+	<h3>Using an Object Literal</h3>
+	 <button class="btn btn-primary" type="button" onclick="sObjects()">Show result</button>
+	 <h4 id="s14">Value-</h4><hr>
+
+	 <h3>Using an Object Literal</h3>
+	 <button class="btn btn-primary" type="button" onclick="sObjects1()">Show result</button>
+	 <h4 id="s15">Value-</h4><hr>
+<!-- Objects end -->
+
+<!-- window .alert start -->
+	<h3>Press the button to alert Window</h3>
+	<button class="btn btn-primary" type="button" onclick="sWindow()">Show result</button><hr>
+<!-- window .alert end -->
+
+<!-- window. print start -->
+	<h3>Click the button to print the current page.</h3>
+	<button class="btn btn-primary" type="button" onclick="window.print()">Print this page</button><hr>
+<!-- window.print end -->
+
+<!-- array start -->
+	<h3>Click the button to see Javascript arrays</h3>
+	<button class="btn btn-primary" type="button" onclick="sArray()">Show result</button>
+	 <h4 id="s16">Value-</h4><hr>
+<!-- array end -->
+
+<!-- Boolean start -->
+	<h3>Display the value of Boolean(10 > 9)</h3>
+	<button class="btn btn-primary" type="button" onclick="sBoolean1()">Show result</button>
+	 <h4 id="s17">Value-</h4><hr>
+
+	 <h3> Boolean example</h3>
+	<button class="btn btn-primary" type="button" onclick="sBoolean2()">Show result</button>
+	 <h4 id="s18">Value-</h4><hr>
+<!-- Boolean end -->
+
+<!-- Ef else start  -->
+ 	<h3> Display "Good day!" if the hour is less than 18:00</h3>
+	<button class="btn btn-primary" type="button" onclick="sEf()">Show result</button>
+	<p id="s19">Good Evening!</p><hr>
+
+	<h3> Ef else statement</h3>
+	<button class="btn btn-primary" type="button" onclick="sEfElse()">Show result</button>
+	<p id="s20"></p><hr>
+<!-- Ef else end  -->
+<!-- Js string start -->
+	<h3> String Operator</h3>
+	<button class="btn btn-primary" type="button" onclick="sString()">Show result</button>
+	<p id="s21">Is A greater than D?</p><hr>
+<!-- Js string end -->
+<!-- switch start -->
+	<h3> Switch Statement</h3>
+	<button class="btn btn-primary" type="button" onclick="sSwitch()">Show result</button>
+	<p id="s22">Today is-</p><hr>
+<!-- switch end -->
+<!-- Loop for start -->
+	<h3> For loop Statement</h3>
+	<button class="btn btn-primary" type="button" onclick="sForL()">Show result</button>
+	<p id="s23">Even numbers in 20</p><hr>
+<!-- Loop for end -->
+
+
+
+</div>
+<!-- header end =-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
